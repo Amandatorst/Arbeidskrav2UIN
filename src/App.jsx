@@ -1,4 +1,4 @@
-import { handlelisten } from './assets/components/Shoppinglist'
+import ShoppingList from './components/ShoppingList.jsx'
 import { useState } from 'react'
 import './App.css'
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
       <h1>Handleliste</h1>
-      <Handlelisten />
+      <ShoppingList />
     </main>
   )
 }
