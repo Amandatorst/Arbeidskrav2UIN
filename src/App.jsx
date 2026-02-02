@@ -1,4 +1,4 @@
-import ShoppingList from './components/ShoppingList.jsx'
+import ShoppingList from "./components/ShoppingList.jsx"
 import { useState } from 'react'
 import './App.css'
 
