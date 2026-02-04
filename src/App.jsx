@@ -1,4 +1,6 @@
 import ShoppingList from "./components/ShoppingList.jsx"
+import ShoppingItem from "./components/ShoppingItem.jsx"
+
 import { useState } from 'react'
 import './App.css'
 
@@ -7,8 +9,8 @@ function App() {
 
   return (
     <main>
-      <h1>Handleliste</h1>
       <ShoppingList />
+      <ShoppingItem />
     </main>
   )
 }
