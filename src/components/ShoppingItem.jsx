@@ -1,26 +1,14 @@
-function ShoppingItem() {
+function ShoppingItem({ items }) {
   return (
     <ul>
-        <li>
-            <input type="checkbox" defaultChecked/> 
-            Egg
-            <input type="number" defaultValue={1}/>
+      {items.map((item, index) => (
+        <li key={index}>
+          <input type="checkbox" defaultChecked={item.unchecked} />
+          {item.name}
+          <input type="number" defaultValue={item.amount} />
         </li>
-        <li>
-            <input type="checkbox" />
-            Sukker
-            <input type="number" defaultValue={1}/>
-
-        </li>
-         <li>
-            <input type="checkbox" />
-            Melk
-            <input type="number" defaultValue={2}/>
-
-        </li>
+      ))}
     </ul>
-      
-
   )
 }
 

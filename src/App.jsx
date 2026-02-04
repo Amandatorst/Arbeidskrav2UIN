@@ -1,20 +1,29 @@
-import ShoppingList from "./components/ShoppingList.jsx"
-import ShoppingItem from "./components/ShoppingItem.jsx"
-import HandleChange from "./components/AddForm.jsx"
-
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react"
+import ShoppingList from "./components/ShoppingList"
+import ShoppingItem from "./components/ShoppingItem"
+import AddForm from "./components/AddForm"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [items, setItems] = useState([
+    { name: "Egg", amount: 1, defaultchecked: true },
+    { name: "Sukker", amount: 1, checked: false },
+    { name: "Melk", amount: 2, checked: false },
+  ])
+
+  function addItem(newItem) {
+    setItems([newItem, ...items]) // 👈 legger øverst
+  }
 
   return (
     <main>
-      <ShoppingList />
-      <ShoppingItem />
-      <HandleChange />
+      <ShoppingList onAddItem={addItem} />
+      <ShoppingItem items={items} />
     </main>
   )
 }
 
 export default App
+
+//Brukte notater fra timen og lms webtricks til hjelp
+//kode til samtale med chatgpt for hjelp til addform funksjonen til slutt: https://chatgpt.com/share/6983d65c-0e28-8004-bac2-9272e0742537
