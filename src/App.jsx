@@ -25,5 +25,8 @@ function App() {
 
 export default App
 
-//Brukte notater fra timen og lms webtricks til hjelp
-//kode til samtale med chatgpt for hjelp til addform funksjonen til slutt: https://chatgpt.com/share/6983d65c-0e28-8004-bac2-9272e0742537
+// Brukte notater fra timen og lms webtricks til hjelp
+// kode til samtale med chatgpt for hjelp til addform funksjonen til slutt: https://chatgpt.com/share/6983d65c-0e28-8004-bac2-9272e0742537
+// For å få funksjonen til å fungere måtte jeg skifte opsettet på alle filene mine :(
+// Heldigvis var mye av koden jeg hadde laget riktig, bare plassert litt feil
+// Se koden før og etter i historien på koden i github repositoryet mitt :)
