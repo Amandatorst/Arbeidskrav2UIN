@@ -1,5 +1,6 @@
 import ShoppingList from "./components/ShoppingList.jsx"
 import ShoppingItem from "./components/ShoppingItem.jsx"
+import HandleChange from "./components/AddForm.jsx"
 
 import { useState } from 'react'
 import './App.css'
@@ -11,6 +12,7 @@ function App() {
     <main>
       <ShoppingList />
       <ShoppingItem />
+      <HandleChange />
     </main>
   )
 }

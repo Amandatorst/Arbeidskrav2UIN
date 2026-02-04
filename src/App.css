@@ -6,19 +6,17 @@ body{
   background: rgb(255, 222, 228);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 form{
-
 
   label{
     font-size: 25px;
   }
 
   input{
-    border-color: rgb(255, 255, 255);
+    border-color:rgb(255, 255, 255);    
     border-style:solid;
     border-width: 5px;
     width: 100%;
@@ -27,20 +25,12 @@ form{
     padding-top: 10px;
     border-radius: 10px;
     background-color: rgb(245, 241, 237);
-
-
-
+}
+  input:hover{
+    background-color: rgb(218, 205, 193);
+  }
 }
 
-
-}
-
-button{
-  background-color: pink;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  width: 100%;
-}
 
 main{
   background: rgb(255, 255, 255);
@@ -53,10 +43,24 @@ main{
 ul{
 list-style: none;
 font-size: 20px;
+justify-content: space-between;
 
   li{
     padding-bottom: 10px;
+    
+    
   }
-
+  
+  input {
+  border: solid;
+  border-color:rgb(218, 205, 193);
+  width: 30px;
+  padding: 5px;
   
 }
+
+  
+  
+
+}
+
