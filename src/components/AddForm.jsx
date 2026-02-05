@@ -12,7 +12,7 @@ function AddForm({ onAddItem }) {
     onAddItem({
       name: name,
       amount: amount,
-      checked: false,
+      checked: true,
     })
 
     setName("")
@@ -29,6 +29,7 @@ function AddForm({ onAddItem }) {
         id="vare"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
       />
 
       <label htmlFor="antall">Antall</label>
@@ -38,6 +39,7 @@ function AddForm({ onAddItem }) {
         min="1"
         value={amount}
         onChange={(e) => setAmount(Number(e.target.value))}
+        required
       />
 
       <input type="submit" value="Legg til vare" />
